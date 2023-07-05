@@ -434,6 +434,19 @@ width:100%;
   .glrgrp{
     text-align: center;
   }
+  #mainln{
+    font-size: 1.1rem;
+ }
+ .subn{
+  font-size: .9rem;
+ }
+.fw-normal{
+  font-size: 1rem !important;
+}
+.flink4{
+  margin-top: .2rem;
+  margin-left: 1rem;
+}
 }
  @media screen and (min-width:992px) and (max-width:1199px){
 

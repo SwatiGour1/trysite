@@ -371,7 +371,7 @@ footer ul li {
 .container-news-page h3{
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:var(--font-family);
   color:#0F0771 ;
   margin-top: 3%;
   text-align: center;
@@ -405,7 +405,7 @@ footer ul li {
 .container-news-page a{
   font-size: 15px;
   font-weight: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:var(--font-family);
   color:crimson;
  
   text-decoration: none;
@@ -417,7 +417,7 @@ footer ul li {
   margin-bottom: 12px;
 }
 .container-news-page h3{
-  font-family: var(--font-familys);
+  font-family: var(--font-family);
   font-size: 2rem;
 }
 
@@ -454,9 +454,9 @@ margin-left: 10%;
 }
 /* contact us */
 .container-contact-page h3{
-  font-size: 28px;
+  font-size:2rem;
   font-weight: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:var(--font-family);
   color:#0F0771 ;
   margin-top: 60px;
   text-align: center;
@@ -535,7 +535,7 @@ border: 1px solid #0F0771;
   }
   
   .container-contact-page label{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:var(--font-family);
   }
 
   .container-contact-page .background-image-overlay-2{

@@ -8,7 +8,7 @@ html {
   font-family: var(--font-family);
 }
 
-.main-width {
+.head {
   background-color: var(--main-color);
   width:100%;
 }
@@ -452,6 +452,149 @@ margin-left: 10%;
 .container-news-page .card-details{
   display: none;
 }
+/* contact us */
+.container-contact-page h3{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#0F0771 ;
+  margin-top: 60px;
+  text-align: center;
+}
+.container-contact-page .card{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  height: 300px;
+  width: 90%;
+  padding: 10px 10px;
+  box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.201), /* Top shadow */
+  0px -4px 6px -2px rgba(0, 0, 0, 0.1), /* Bottom shadow */
+  4px 0px 6px -2px rgba(0, 0, 0, 0.1), /* Left shadow */
+  -4px 0px 6px -2px rgba(0, 0, 0, 0.1); /* Right shadow */
+  transition: transform 0.3s ease-in-out;
+  margin-left:6%;
+  }   
+
+ .container-contact-page .card:hover{
+    transform: scale(0.9);
+  }
+  .container-contact-page .card h5{
+  color:#0F0771;
+  text-align: center;
+  margin-top: 20px;
+  }
+
+  #map {
+    height: 300px;
+    
+  }
+ .container-contact-page .text{
+  color: #0F0771;
+  font-weight: bold;
+  font-size:20px;
+}
+  .container-contact-page{
+  margin-bottom: 6px;
+  height: auto;
+  margin-top: 12px;
+
+}
+
+.container-contact-page p{
+  font-size: 16px;
+  font-weight: bold;
+  font-family:var(--font-family);
+  color:black ;
+  text-align:center;
+  margin-top: 30px;
+  
+}
+
+.container-contact-page .contact-form input[type="email"],
+            input[type="text"]{
+border: 1px solid #0F0771;
+
+
+}
+.container-contact-page .form-control{
+border: 1px solid #0F0771;
+}
+ 
+ .container-contact-page .contact-form {
+    padding: 20px;
+    
+  }
+
+  .container-contact-page .contact-form h2 {
+    margin-bottom: 20px;
+    color:#0F0771;
+  }
+ .container-contact-page .btn{
+    background-color: #0F0771 ;
+    margin-top: 12px;
+  }
+  
+  .container-contact-page label{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .container-contact-page .background-image-overlay-2{
+    position: relative;
+    height: auto; 
+    text-align: center;
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+    background-image:url('../image/lbs3.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+    }
+   .container-contact-page .background-image-overlay-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.422); 
+    }
+   .container-contact-page .background-image-overlay-2 h1{
+    font-size: 48px;
+    top: 60px; 
+    color:white;
+    font-weight: bold;
+    position: relative;
+    }
+    
+   .container-contact-page .background-image-overlay-2 .image-grid{
+    width: 100%;
+    padding: 140px 140px 140px 140px;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    gap: 20px; /* Adjust the spacing between images as needed */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    z-index: 1;
+    }
+   .container-contact-page .background-image-overlay-2 .image-grid img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 2px solid goldenrod;
+    padding: 5px;
+    border-radius: 15px 0px 15px 0px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s, transform 0.9s;
+    }
+    
+   .container-contact-page .background-image-overlay-2 .image-grid img.animate {
+    opacity: 1;
+    transform: translateY(0);
+    }
 
 @media screen and (min-width:256px) and (max-width:468px){
  

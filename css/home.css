@@ -2,10 +2,11 @@
   --main-color: #0F0771;
   --color: white;
   --font-family: 'Roboto', sans-serif;
+  --font-familiy2:'Roboto';
 }
 
 html {
-  font-family: var(--font-family);
+  /* font-family: var(--font-family); */
 }
 
 .head {
@@ -81,6 +82,7 @@ nav a {
 
 .lr {
   background-color: yellow;
+  text-align: center;
 }
 
 .lr:hover {
@@ -131,7 +133,7 @@ nav a {
   line-height: 1.2em;
   color: #29166f;
   font-weight: 700;
-  font-size: 2.8rem;
+  /* font-size: 2.8rem; */
 }
 
 /* habout */
@@ -220,6 +222,7 @@ h5 {
 }
 .counter{
   font-size: 1.3rem !important;
+  font-weight: bold;
 }
 .numbers div {
   margin: 0 2rem;
@@ -236,6 +239,7 @@ h5 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-family: var(--font-family);
+  font-weight: bold;
 }
 .numc img{
   margin-left: 46px;
@@ -595,7 +599,42 @@ border: 1px solid #0F0771;
     opacity: 1;
     transform: translateY(0);
     }
+/* Principal */
+.prin img {
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin: 30px 30px 30px 0;
+  box-shadow: 4px 4px 6px 5px black;
+}
+.prin {
 
+  margin-top: 1rem;
+  padding: 1rem;
+  word-spacing: 0.2rem;
+  box-sizing: border-box;
+text-align: center;
+  box-shadow: 1px 1px 5px 1px rgb(162, 162, 248);
+  border: 15px solid var(--main-color);
+  border-left-style: none;
+  border-right-style: none;
+  /* font-weight: 600; */
+  font-family:var(--font-familiy);
+}
+.msg{
+  text-align: justify;
+  /* font-family: var(--font-family); */
+  font-size: 1.1rem;
+  font-family:var(--font-familiy);
+  word-spacing: .5rem;
+}
+ .sp1{
+margin-left: 39.5rem;
+
+}
+.sp2 {
+    margin-left: 39rem;
+}
 @media screen and (min-width:256px) and (max-width:468px){
  
   .header p{
@@ -631,6 +670,9 @@ border: 1px solid #0F0771;
   }
   .counter{
     font-size:2rem !important;
+  }
+  .cr{
+    margin-bottom: 5rem !important;
   }
   .cr p{
     font-size:2.2rem ;

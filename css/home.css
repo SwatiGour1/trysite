@@ -320,10 +320,10 @@ footer ul li {
   position: relative;
 }
 
-.about-img .img_1 {
+.about-img .img_1{
   border-radius: 20px !important;
-  border: 1px solid rgb(100 107 160) !important;
-  background: #545d5c !important;
+  /* border: 1px solid rgb(100 107 160) !important; */
+  /* background: #545d5c !important; */
   position: relative !important;
   max-width: fit-content !important;
   padding: 1rem !important;
@@ -333,7 +333,7 @@ footer ul li {
   width: 100%;
 }
 
-.border-line {
+/* .border-line {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -341,7 +341,7 @@ footer ul li {
   top: 5px;
   left: 5px;
   z-index: -1;
-}
+} */
 
 
 
@@ -363,8 +363,9 @@ footer ul li {
 .about p{
   font-size: 1.2rem;
   font-family: var(--font-family);
-  text-align: justify;
+  text-align:left;
   line-height: 30px;
+  margin-top: 30px;
 }
 .aboutp{
   font-family: var(--font-family);
@@ -608,7 +609,7 @@ border: 1px solid #0F0771;
   box-shadow: 4px 4px 6px 5px black;
 }
 .prin {
-
+margin-left: 120px;
   margin-top: 1rem;
   padding: 1rem;
   word-spacing: 0.2rem;
@@ -620,6 +621,7 @@ text-align: center;
   border-right-style: none;
   /* font-weight: 600; */
   font-family:var(--font-familiy);
+  width: 900px;
 }
 .msg{
   text-align: justify;
@@ -635,6 +637,51 @@ margin-left: 39.5rem;
 .sp2 {
     margin-left: 39rem;
 }
+/* admission */
+.groupaddmision a{
+  text-decoration: none;
+}
+.groupaddmision{
+  margin-left: 33px;
+}
+.adbtn{
+   border-top:2px solid rgb(226, 223, 223);
+    border-bottom:2px solid rgb(226, 223, 223);
+     border-right: 2px solid rgb(226, 223, 223);
+      border-radius: 5%;
+   width: 80%;
+}
+.adbtn1{
+border-left:4px solid yellow; 
+}
+.adbtn2{
+border-left:4px solid green; 
+}
+.adbtn3{
+border-left:4px solid blue;
+}
+.adbtn4{
+border-left:4px solid orange;
+}
+/* @media screen and (min-width:992px) and (max-width:1100px) {
+#navh ul li a{
+padding:1px;
+margin:1px;
+}
+#btnh{
+display: none;
+}
+}
+@media screen and (min-width:769px){
+#navh ul li a{
+padding:1px;
+margin:1px;
+font-size: 20px;
+}
+#navh ul li ul li a{
+font-size: 24px;
+}
+} */
 @media screen and (min-width:256px) and (max-width:468px){
  
   .header p{
@@ -723,6 +770,20 @@ margin-left: 39.5rem;
 }
 .aboutp{
   font-size: 1.5rem;
+}
+.prin{
+  display: flex;
+  flex-direction: column;
+  width:500px;
+  margin-left: 0;
+  /* display: none; */
+}
+.prin img{
+  width: 100px;
+  height: 100px;
+}
+.msg{
+  /* width: ; */
 }
 }
 

@@ -5,9 +5,7 @@
   --font-familiy2:'Roboto';
 }
 
-html {
-  /* font-family: var(--font-family); */
-}
+
 
 .head {
   background-color: var(--main-color);
@@ -663,33 +661,16 @@ border-left:4px solid blue;
 .adbtn4{
 border-left:4px solid orange;
 }
-/* @media screen and (min-width:992px) and (max-width:1100px) {
-#navh ul li a{
-padding:1px;
-margin:1px;
-}
-#btnh{
-display: none;
-}
-}
-@media screen and (min-width:769px){
-#navh ul li a{
-padding:1px;
-margin:1px;
-font-size: 20px;
-}
-#navh ul li ul li a{
-font-size: 24px;
-}
-} */
+
 @media screen and (min-width:256px) and (max-width:468px){
  
   .header p{
-    font-size: 1.2rem !important;
+    font-size: .5rem !important;
+    margin-top: 0;
   }
   .header img{
-    height: 150px !important;
-    width: 150px !important;
+    height: 100px !important;
+    width: 100px !important;
   }
   .container-fluid a {
     font-size: 2rem !important;

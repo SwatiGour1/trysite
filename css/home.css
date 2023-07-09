@@ -4,7 +4,10 @@
   --font-family: 'Roboto', sans-serif;
   /* --font-familiy2:'Roboto'; */
 }
-
+.img1{
+  width: 170px;
+  height: 170px;
+}
 
 
 .head {
@@ -24,6 +27,7 @@
 .headh {
   animation: blink 1s linear infinite;
   color: yellow;
+  text-align: center;
 }
 
 @keyframes blink {
@@ -44,6 +48,7 @@
 .header p {
   word-spacing: .5rem;
   font-size: 2rem;
+  text-align: center;
 }
 
 .nav {
@@ -660,14 +665,18 @@ border-left:4px solid orange;
 
 @media screen and (min-width:256px) and (max-width:468px){
  
-  /* .header p{
+   .header p{
     font-size: .5rem !important;
     margin-top: 0;
   }
-  .header img{
+  /*.header img{
     height: 100px !important;
     width: 100px !important;
   } */
+  .img1{
+    width: 100px !important;
+    height: 100px !important;
+  }
   .container-fluid a {
     font-size: 2rem !important;
   }

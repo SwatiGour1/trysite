@@ -666,16 +666,19 @@ border-left:4px solid orange;
 @media screen and (min-width:256px) and (max-width:468px){
  
    .header p{
-    font-size: .5rem !important;
-    margin-top: 0;
+    font-size: .6rem !important;
+    /* margin-top: 0% !important; */
   }
-  /*.header img{
+  .header img{
     height: 100px !important;
     width: 100px !important;
-  } */
+  } 
+  .headh{
+    font-size: .5rem;
+  }
   .img1{
-    width: 100px !important;
-    height: 100px !important;
+    /* width: 80px !important; */
+    /* height: 80px !important; */
   }
   .container-fluid a {
     font-size: 2rem !important;

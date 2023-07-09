@@ -65,7 +65,6 @@ nav a {
 
 .container-fluid a {
   color: var(--main-color);
-  /* font-size: 19px; */
   font-family: var(--font-family);
   font-weight: 600;
 }
@@ -131,7 +130,6 @@ nav a {
   line-height: 1.2em;
   color: #29166f;
   font-weight: 700;
-  /* font-size: 2.8rem; */
 }
 
 /* habout */
@@ -215,7 +213,7 @@ h5 {
   /* padding: 1rem 0; */
 }
 .response{
-  width: 100%;
+  /* width: 100%; */
 }
 .cr {
   color:var(--main-color);
@@ -253,7 +251,7 @@ h5 {
 .linked{
   text-decoration: none;
   }
-  #mainln{
+.mainln{
     font-size: 1.5rem;
   }
 footer ul li {
@@ -306,22 +304,7 @@ footer ul li {
 .vission-mission{
   font-family: var(--font-family);
 }
-/* .p-17 {
-  font-family:var(--font-family);
-  margin-top: 0;
-  margin-bottom: 1rem;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  word-wrap: none;
-  margin: 1rem;
-}
 
-.py-5 {
-  padding-bottom: 3rem;
-} */
 .about-img {
   position: relative;
 }
@@ -741,9 +724,7 @@ border-left:4px solid orange;
   .flogo p{
     font-size: 2rem !important;
   }
-  /* #flogo2,#flogo3{
-    margin-left: 50px !important;
-  } */
+ 
   .glrgrp{
     display: flex;
     flex-direction: column;
@@ -752,12 +733,17 @@ border-left:4px solid orange;
   width:250px !important;
   height: 150px !important;
 }
-#mainln{
-  font-size: 2.5rem !important;
-}
-.subn{
+.mainln{
+  /* margin-top: .10rem!important; */
   font-size: 2rem !important;
 }
+.subn{
+  font-size:1rem !important;
+}
+#flink{
+  font-size:1rem !important;
+}
+
 .groups{
   display: flex;
   flex-direction: column;
@@ -784,7 +770,6 @@ border-left:4px solid orange;
   flex-direction: column;
   width:500px;
   margin-left: 0;
-  /* display: none; */
 }
 .prin img{
   width: 100px;

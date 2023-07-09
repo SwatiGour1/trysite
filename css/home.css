@@ -2,7 +2,7 @@
   --main-color: #0F0771;
   --color: white;
   --font-family: 'Roboto', sans-serif;
-  --font-familiy2:'Roboto';
+  /* --font-familiy2:'Roboto'; */
 }
 
 
@@ -135,45 +135,50 @@ nav a {
 /* habout */
 .fabout h2,
 h5 {
-  /* font-family: 'Roboto', sans-serif; */
- line-height: 1.5;
+  font-family:var(--font-familiy);
+  line-height: 1.5;
   font-weight: 400;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
-.fabout h2{
+ .fabout h2{
   font-style: italic;
 }
-
-.quotes {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
 .fabout p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: var(--font-familiy);
 }
 
 .faboutp {
   font-style: italic;
 }
+.quotes span{
+  font-style: normal;
+}
+/*.quotes {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}*/
+
+
+
 
 .fhr {
-  width: 470px;
-  height: 2px;
-  color: var(--main-color);
-  margin-left: 18rem;
-}
+  /* width: 470px; */
+  /* height: 2px; */
+  /* color: var(--main-color); */
+  /* margin-left: 18rem; */
+  font-size: var(--font-familiy);
+} 
 
-.button-box{
+.buttonbox{
   width: 500px;
 }
 
-.left-btn {
+.leftbtn {
   background-color: var(--color);
   color: var(--main-color);
   border: none;
@@ -183,7 +188,7 @@ h5 {
   text-decoration: none;
 }
 
-.right-btn {
+.rightbtn {
   background-color: var(--color);
   color: var(--main-color);
   border: none;
@@ -218,12 +223,12 @@ h5 {
 .cr {
   color:var(--main-color);
 }
-.quotes span{
+/* .quotes span{
   font-size: 2.5rem;
 }
 .faboutp{
   font-size: 1.2rem;
-}
+} */
 .counter{
   font-size: 1.3rem !important;
   font-weight: bold;
@@ -676,17 +681,23 @@ border-left:4px solid orange;
     font-size:1.5rem ;
     margin-top: 200rem !important;
   }
-  .button-box{
-    margin-left: 1rem;
-    width: 500px;
-    padding: 0;
+
+  .buttonbox{
+    /* margin-left: 1rem; */
+    width:200px !important;
+    /* display: none; */
   }
-  .left-btn{
-   margin-left: 1.8rem;
+  .leftbtn,.rightbtn{
+   /* margin-left: 1.5rem; */
+   padding:5px;
+   margin: 2px;
   }
-  .button-box a{
-    font-size: 1rem;
-    padding: .8rem;
+  .leftbtn{
+    margin-left: 4px;
+  }
+  .buttonbox a{
+    font-size:.8rem;
+    /* padding: .8rem; */
   
   }
   .ffac {
@@ -702,6 +713,7 @@ border-left:4px solid orange;
   .student{
     margin-left: 10px;
   }
+  
   .groups img{
     width: 120px;
     height: 100px;

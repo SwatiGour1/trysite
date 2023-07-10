@@ -768,20 +768,13 @@ footer{
   align-items: center;
 }
 .about p{
-  font-size: 1.2rem;
+  font-size: 1.1rem !important;
 }
-.img_1{
-  margin-left: 160px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.vs h3{
-  font-size: 2rem;
-  margin-top:25px !important;
-}
+
 .aboutp{
-  font-size: 1.5rem;
-}
+  font-size: 1.1rem !important;
+  }
+  
 .prin{
   display: flex;
   flex-direction: column;

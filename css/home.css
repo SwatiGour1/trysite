@@ -538,6 +538,37 @@ border-left:4px solid orange;
 font-family: var(--font-family);
 word-spacing: .1rem;
 }
+/* result */
+.card16 {
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  box-shadow: 2px 3px 8px 3px black;
+}
+
+.btn1 {
+  background-color: var(--main-color);
+  color: var(--color);
+  border-radius: 20rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  text-align: center;
+}
+
+.card-title11 {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+
+.btn11 {
+  background-color: var(--color);
+  color: var(--main-color);
+  border-radius: 0.6rem;
+  padding: 0.4rem;
+  border: 2px solid var(--main-color);
+}
 @media screen and (min-width:256px) and (max-width:468px){
  
    .header p{

@@ -487,12 +487,7 @@ font-size: 1.1rem;
     font-size: 1.1rem;
 }
 /* admission */
-/* .groupaddmision a{
-  text-decoration: none;
-}
-.groupaddmision{
-  margin-left: 33px;
-} */
+
 .pg{
   font-family: var(--font-family);
   font-size: 1.1rem;
@@ -537,6 +532,11 @@ border-left:4px solid orange;
 }
 .crbtn h2{
   color:var(--main-color);
+}
+/* bed */
+.bed p{
+font-family: var(--font-family);
+word-spacing: .1rem;
 }
 @media screen and (min-width:256px) and (max-width:468px){
  

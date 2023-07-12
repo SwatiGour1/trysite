@@ -357,99 +357,19 @@ footer ul li {
   text-align: justify;
 }
 /* news page */
-.container-news-page h3{
-  font-size: 28px;
-  font-weight: bold;
-  font-family:var(--font-family);
-  color:#0F0771 ;
-  margin-top: 3%;
-  text-align: center;
-}
-.container-news-page button{
-  background-color:#0F0771;
-  position: relative;
-  padding: 15px 35px;
-  margin-left: 13.5%;
-  margin-top: 2%;
-  border: none;
-  margin-bottom: 2%;
-}
 
-.container-news-page button a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.container-news-page button:hover{
-  cursor: pointer;
-  background-color: #A46767;
-}
-.container-news-page button:active{
-  transform: scale(0.95);
-}
-
-.container-news-page button:first-of-type{
-  background-color: #A46767;
-}
-
-.container-news-page a{
-  font-size: 15px;
-  font-weight: bold;
-  font-family:var(--font-family);
-  color:crimson;
- 
-  text-decoration: none;
-}
-
-
-.container-news-page{
-  background-color:#fff;
-  margin-bottom: 12px;
-}
-.container-news-page h3{
-  font-family: var(--font-family);
-  font-size: 2rem;
-}
-
-.container-news-page .card{
-margin-top: 4%;
-box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.201), /* Top shadow */
-0px -4px 6px -2px rgba(0, 0, 0, 0.1), /* Bottom shadow */
-4px 0px 6px -2px rgba(0, 0, 0, 0.1), /* Left shadow */
--4px 0px 6px -2px rgba(0, 0, 0, 0.1); /* Right shadow */
-transition: transform 0.3s ease-in-out;
-max-width: 80%;
-margin-left: 10%;
-
-}
-
-.container-news-page  .card-text{
-  font-weight: bold;
-}
-.container-news-page  .card:hover{
-  transform: scale(0.9);
-}
-
-
-.container-news-page .btn{
-  background-color: #0F0771;
-  color: #fff;
-  padding: 3px 25px;
-  border-radius: 15px 0px 15px 0px ;
-  margin-left: 0px;
-}
-
-.container-news-page .card-details{
-  display: none;
-}
 /* contact us */
-.container-contact-page h3{
-  font-size:2rem;
-  font-weight: bold;
-  font-family:var(--font-family);
-  color:#0F0771 ;
-  margin-top: 60px;
-  text-align: center;
+.container-contact-page{
+  margin-bottom: 6px;
+  height: auto;
+  margin-top: 12px;
+  overflow-x: hidden;
+  padding: 20px;
 }
+.container-contact-page .card-title{
+  font-weight: bold ;
+}
+
 .container-contact-page .card{
   margin-top: 80px;
   margin-bottom: 50px;
@@ -462,71 +382,15 @@ margin-left: 10%;
   -4px 0px 6px -2px rgba(0, 0, 0, 0.1); /* Right shadow */
   transition: transform 0.3s ease-in-out;
   margin-left:6%;
+  
   }   
 
- .container-contact-page .card:hover{
-    transform: scale(0.9);
-  }
-  .container-contact-page .card h5{
-  color:#0F0771;
+.container-contact-page  h5{
+  color:var(--main-color);
   text-align: center;
   margin-top: 20px;
-  }
-
-  #map {
-    height: 300px;
-    
-  }
- .container-contact-page .text{
-  color: #0F0771;
   font-weight: bold;
-  font-size:20px;
-}
-  .container-contact-page{
-  margin-bottom: 6px;
-  height: auto;
-  margin-top: 12px;
-
-}
-
-.container-contact-page p{
-  font-size: 16px;
-  font-weight: bold;
-  font-family:var(--font-family);
-  color:black ;
-  text-align:center;
-  margin-top: 30px;
-  
-}
-
-.container-contact-page .contact-form input[type="email"],
-            input[type="text"]{
-border: 1px solid #0F0771;
-
-
-}
-.container-contact-page .form-control{
-border: 1px solid #0F0771;
-}
- 
- .container-contact-page .contact-form {
-    padding: 20px;
-    
   }
-
-  .container-contact-page .contact-form h2 {
-    margin-bottom: 20px;
-    color:#0F0771;
-  }
- .container-contact-page .btn{
-    background-color: #0F0771 ;
-    margin-top: 12px;
-  }
-  
-  .container-contact-page label{
-    font-family:var(--font-family);
-  }
-
   .container-contact-page .background-image-overlay-2{
     position: relative;
     height: auto; 
@@ -610,27 +474,29 @@ text-align: center;
 }
 .msg{
   text-align: justify;
-  /* font-family: var(--font-family); */
   font-size: 1.1rem;
-  font-family:var(--font-familiy);
+  font-family:var(--font-family);
   word-spacing: .5rem;
 }
  .sp1{
 margin-left: 39.5rem;
 font-size: 1.1rem;
-/* text-align: right; */
 }
 .sp2 {
     margin-left: 39rem;
     font-size: 1.1rem;
-    /* text-align: right; */
 }
 /* admission */
-.groupaddmision a{
+/* .groupaddmision a{
   text-decoration: none;
 }
 .groupaddmision{
   margin-left: 33px;
+} */
+.pg{
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+  word-spacing: .2px;
 }
 .adbtn{
    border-top:2px solid rgb(226, 223, 223);
@@ -650,6 +516,11 @@ border-left:4px solid blue;
 }
 .adbtn4{
 border-left:4px solid orange;
+}
+/* ugpg */
+#div1,#div2,#div3 p{
+  font-family: var(--font-family);
+  font-size: 1.2rem;
 }
 /* course */
 .crbtn a{

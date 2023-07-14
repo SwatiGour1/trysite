@@ -580,11 +580,10 @@ margin-left: 10%;
     /* activity */
     .container-activities{
       overflow-x: hidden;
+      /* margin-bottom: 0; */
     
      }
-    
-    
-    .container-activities h3{
+     .container-activities h3{
       font-size: 28px;
       font-weight: bold;
       font-family:var(--font-family);
@@ -805,7 +804,7 @@ font-family: var(--font-family);
 word-spacing: .1rem;
 }
 /* result */
-.card11 {
+/* .card11 {
   border: 2px solid var(--main-color);
   box-shadow: 2px 3px 8px 3px black;
   align-items: center;
@@ -901,7 +900,6 @@ header {
 }
 
 .panel-title {
-    
     font-size: 25px;
     text-align: center;
     padding-bottom: 0;
@@ -913,7 +911,7 @@ header {
 
 span.star {
     color: red;
-}
+} */
 /* classroom */
 .mockImg{
   width: 350px;
@@ -1007,6 +1005,7 @@ span.star {
   }
   .award h5{
     font-size: 1rem;
+    margin-left: 20px;
   }
   /* committee */
   .commitee .card img {
@@ -1043,6 +1042,7 @@ span.star {
     font-family:var(--font-family);
     font-size: 3rem;
   }
+  
 @media screen and (min-width:256px) and (max-width:468px){
  
    .header p{
@@ -1099,6 +1099,9 @@ span.star {
   .flogo{
     margin-left:4rem !important;
     margin-right: 4rem !important;
+  }
+  #hfac{
+    font-size:.5rem !important;
   }
   .student{
     margin-left: 10px;
@@ -1190,7 +1193,6 @@ footer{
 .commitee{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 .award img{
   margin-left:50px;
@@ -1198,6 +1200,20 @@ footer{
 .award h5{
   font-size: 1rem;
   margin-left: 50px;
+}
+.hdepart{
+  width: 50%;
+  margin-left:0%;
+}
+.hdepart th,td{
+  font-size: .5rem;
+}
+.hdepart th{
+  font-size: .7rem;
+}
+.commitee .card{
+  margin-left: 15px;
+  margin-top: 5px;
 }
 }
 
@@ -1313,12 +1329,27 @@ footer{
   font-size: .6rem;
 }
 .award img{
-  margin-left:50px;
+  margin-left:10px;
+  width: 180px;
+  margin-top: 25px;
 }
 .award h5{
-  font-size: 1rem;
+  font-size: .6rem;
   margin-left: 50px;
 }
+.award1 h2{
+  font-size: .9rem;
+}
+.award1 p{
+  font-size: 1rem;
+}
+.commitee .card img{
+  width: 170px;
+  height: 150px;
+  }
+  .commitee .card h5{
+    font-size: 1rem !important;
+  }
 }
 @media screen and (max-width:990px){
   
@@ -1370,6 +1401,7 @@ footer{
 .container-activities .card-text{
   font-size: .8rem;
 }
+
 }
  @media screen and (min-width:992px) and (max-width:1199px){
 .header p{

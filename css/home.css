@@ -2,10 +2,8 @@
   --main-color: #0F0771;
   --color: white;
   --font-family: 'Roboto', sans-serif;
-  /* --font-familiy2:'Roboto'; */
+  --font-size:1rem;
 }
-
-
 
 .head {
   background-color: var(--main-color);
@@ -13,7 +11,6 @@
 }
 
 .container {
-  /* width: 1200px; */
   font-family: var(--font-family);
 }
 
@@ -26,7 +23,6 @@
 .headh {
   animation: blink 1s linear infinite;
   color: yellow;
-  /* text-align: center; */
 }
 
 @keyframes blink {
@@ -47,7 +43,6 @@
 .header p {
   word-spacing: .5rem;
   font-size: 2rem;
-  /* text-align: center; */
 }
 
 .nav {
@@ -211,7 +206,6 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* padding: 1rem 0; */
 }
 
 .cr {
@@ -345,7 +339,7 @@ footer ul li {
   margin-top: 12px;
 }
 .about p{
-  font-size: 1.2rem;
+  font-size:var(--font-size);
   font-family: var(--font-family);
   text-align:left;
   line-height: 30px;
@@ -353,12 +347,12 @@ footer ul li {
 }
 .aboutp{
   font-family: var(--font-family);
-  font-size: 1rem;
+  font-size:var(--font-size);
   text-align: justify;
 }
 /* news page */
 .container-news-page{
-  overflow-x: hidden;
+  overflow-x:hidden;
   background-color:#fff;
   margin-bottom: 12px;
  }
@@ -369,7 +363,7 @@ footer ul li {
   font-weight: bold;
  }
 
- .container-news-page #para{
+ .container-news-page .card-details{
   display: none;
   font-weight: bold;
   color:rgb(1, 56, 58);
@@ -377,12 +371,12 @@ footer ul li {
   font-family:var(--font-family);
  }
  
-.container-news-page .covid-img{
+/* .container-news-page .covid-img{
   max-width: 120px;
  display: block;
 margin-left: auto;
 margin-right: auto;
-}
+} */
 .container-news-page .card-title{
   color: #0F0771;
  
@@ -483,6 +477,9 @@ margin-left: 10%;
   100% {
     opacity: 1;
   }
+}
+.container-news-page .newscard{
+  background-color:#f1f1f9;
 }
 
 /* contact us */
@@ -636,19 +633,15 @@ margin-left: 10%;
     
     .container-activities .card-title{
       color:var(--main-color);
-      font-size: 24px;
+      /* font-size: 24px; */
       animation: bottomToTop 2s ease-in-out;
      margin-left: 24px;
     }
     .container-activities .card-text{
-      font-size: large;
+      font-size:var(--font-size);
       font-family:var(--font-family);
-      /* color:#fff; */
-      /* background-color:#100771; */
       padding: 10px 20px;
-    
-    
-     
+      text-align: justify;
     }
     
     .container-activities .img-fuild{
@@ -755,8 +748,11 @@ font-size: 1.1rem;
 
 .pg{
   font-family: var(--font-family);
-  font-size: 1.1rem;
+  font-size: var(--font-size);
   word-spacing: .2px;
+}
+.adbtn a{
+  text-decoration: none;
 }
 .adbtn{
    border-top:2px solid rgb(226, 223, 223);
@@ -782,6 +778,10 @@ border-left:4px solid orange;
   font-family: var(--font-family);
   font-size: 1.2rem; 
 }
+.ug{
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
 /* course */
 .crbtn a{
   background-color:var(--main-color);
@@ -803,115 +803,6 @@ border-left:4px solid orange;
 font-family: var(--font-family);
 word-spacing: .1rem;
 }
-/* result */
-/* .card11 {
-  border: 2px solid var(--main-color);
-  box-shadow: 2px 3px 8px 3px black;
-  align-items: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-
-.panel-body{
-  margin-top: 1rem;
-  font-size: large;
-  color: black;
-}
-
-.form-control {
-    margin-bottom: 1rem;
-    display: block;
-    width: 100%;
-    height: 35px;
-    padding: 2px;
-    font-size: 14px;
-    cursor: pointer;
-    color: var(--main-color);
-    background-color: #fff;
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
-    box-shadow:inset 0 1px 1px var(--main-color);
-   
-}
-
-
-.theme-button {
-    padding: 5px 20px;
-    background: var(--main-color);
-    border: 0;
-    color: #fff;
-    border: 1px solid var(--main-color);
-    border-radius: 2rem;
-    font-family: 'Quicksand', sans-serif;
-    position: relative;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 500;
-    
-}
-
-.theme-button-2 {
-    padding: 5px 20px;
-    background: var(--main-color);
-    border: 0;
-    color: #fff;
-    border: 1px solid var(--main-color);
-    border-radius: 2rem;
-    font-family: 'Quicksand', sans-serif;
-    position: relative;
-    outline: none;
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-
-header {
-    float: left;
-    margin-top: 15px;
-    margin-bottom: 1px;
-    width: 100%;
-    position: relative;
-    background: #f3d8a4;
-    padding: 0px;
-}
-
- 
-
-
-    .panel-default > .panel-heading {
-        color: white;
-        background-color: var(--main-color);
-        border-color: var(--main-color);
-        text-align: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-.panel-heading {
-    padding-top: 5px ;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    
-}
-
-.panel-title {
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 0;
-    font-weight: 600;
-    color: white;
-}
-
-
-
-span.star {
-    color: red;
-} */
 /* classroom */
 .mockImg{
   width: 350px;
@@ -926,7 +817,7 @@ span.star {
 
 .mockDes{
   text-align: justify;
-  font-size:1rem;
+  font-size:var(--font-size);
 }
 .Paragra{
   font-size: 1.2rem;
@@ -964,16 +855,12 @@ span.star {
   flex-direction: column;
   box-shadow: 0 5px 202px rgba(0,0,0,0.5);
   transition: 0.3s ease-in-out; 
-}
-.alumnicon .card:hover{
   height: 420px;
 }
 .alumnicon .card .imgBx {
   position: relative;
   width: 260px;
-  /* height: 220px;  */
  top: -60px;
-  /* left: 20px;  */
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
@@ -985,20 +872,17 @@ span.star {
   }
    .alumnicon .card .content{
     position: relative;
-    margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
     color: #111;
-    visibility: hidden;
     opacity: 0;
-    transition: 0.3s ease-in-out;
-  }  
-  .alumnicon .card:hover .content{
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
-    transition-delay: 0.3s;
-  } 
+  }  
+  .alumnicon .card .content p{
+    font-size: var(--font-size);
+  }
   /* award */
   .award img{
     margin-left:25px;
@@ -1100,9 +984,7 @@ span.star {
     margin-left:4rem !important;
     margin-right: 4rem !important;
   }
-  #hfac{
-    font-size:.5rem !important;
-  }
+  
   .student{
     margin-left: 10px;
   }
@@ -1126,8 +1008,12 @@ span.star {
   #flogo3 {
     display: none;
   }
-  .flogo p{
-    font-size: 2rem !important;
+  .hfec{
+    font-size:.5rem !important;
+  }
+  .text{
+    font-size:1rem !important ;
+  
   }
  .mainln{
   font-size: 2rem !important;

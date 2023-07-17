@@ -88,7 +88,7 @@ nav a {
 
 #carouselExampleSlidesOnly img {
   height: 500px;
-  width:100%;
+  width:1300px;
 }
 
 .facilties {
@@ -484,95 +484,174 @@ margin-left: 10%;
 
 /* contact us */
 .container-contact-page{
-  margin-bottom: 6px;
-  height: auto;
-  margin-top: 12px;
-  overflow-x: hidden;
-  padding: 20px;
-}
-.container-contact-page .card-title{
-  font-weight: bold;
-  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
 }
 
-.container-contact-page .card{
-  margin-top: 80px;
-  margin-bottom: 50px;
-  height: 300px;
-  width: 90%;
-  padding: 10px 10px;
+.container-contact-page .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
   box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.201), /* Top shadow */
   0px -4px 6px -2px rgba(0, 0, 0, 0.1), /* Bottom shadow */
   4px 0px 6px -2px rgba(0, 0, 0, 0.1), /* Left shadow */
   -4px 0px 6px -2px rgba(0, 0, 0, 0.1); /* Right shadow */
-  transition: transform 0.3s ease-in-out;
-  margin-left:6%;
-  
-  }   
+  top: 20px;
+ 
+}
 
-.container-contact-page  h5{
-  color:var(--main-color);
-  text-align: center;
-  margin-top: 20px;
+.container-contact-page .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color:#0F0771; /* Set the blue color */
+}
+
+.container-contact-page .card-body {
+  padding: 2rem;
+}
+
+.card-text-left {
+  color:#fff;
+  text-align: left;
+  position: relative;
+  font-size: 28px;
   font-weight: bold;
-  }
-  .container-contact-page .background-image-overlay-2{
-    position: relative;
-    height: auto; 
-    text-align: center;
-    color: white;
-    padding: 20px 15px;
-    overflow: hidden;
-  background-image:url('../image/lbs3.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-top: 120px;
-    }
-   .container-contact-page .background-image-overlay-2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 255, 0.422); 
-    }
-   .container-contact-page .background-image-overlay-2 h1{
-    font-size: 48px;
-    top: 60px; 
-    color:white;
-    font-weight: bold;
-    position: relative;
-    }
-    
-   .container-contact-page .background-image-overlay-2 .image-grid{
-    width: 100%;
-    padding: 140px 140px 140px 140px;
-    position: relative;
-    display: grid;
-    justify-content: center;
-    gap: 20px; /* Adjust the spacing between images as needed */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    z-index: 1;
-    }
-   .container-contact-page .background-image-overlay-2 .image-grid img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    padding: 5px;
-    border-radius: 15px 0px 15px 0px;
-    position: relative;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.9s, transform 0.9s;
-    border:none ;
-    }
-    
-   .container-contact-page .background-image-overlay-2 .image-grid img.animate {
-    opacity: 1;
-    transform: translateY(0);
-    }
+}
+
+.card-text-right {
+  /* text-align: right; */
+  color: #0F0771;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.card-address{
+  color: #fff;
+  position: relative;
+  
+}
+
+.contact-image{
+  position: relative;
+  width: 60%;
+  height: 30%;
+  top: 15%;
+}
+
+.card-info{
+  position: relative;
+  color: #fff;
+  font-size: 15px;
+  font-weight:normal;
+}
+
+
+
+.container-contact-page .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+input {
+  width: 100%;
+  padding: 5px;
+  border:1px solid #0F0771;
+ 
+}
+
+input::placeholder {
+  color:black;
+}
+
+.countries-dropdown {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #0F0771;
+}
+
+.countries-dropdown option {
+  padding: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border:1px solid #0F0771;
+}
+
+input,
+textarea::placeholder{
+  color: black;
+}
+.map-text{
+  font-size: 15px;
+  text-align: center;
+  color: #0F0771;
+}
+
+.send-message-btn {
+  padding: 4px 8px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  background-color:#0F0771;
+  color: white; 
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 1px;
+  /* margin-bottom: 12px; */
+ /* margin-left: 150px; */
+}
+
+.send-message-btn:hover {
+  background-color:#fff;
+  color: black;
+  border: #0F0771 solid 1px;
+}
+
+
+
+
+label {
+  display: block; 
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 14px;
+  height: 13px;
+  border: 2px solid #0F0771;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+input[type="checkbox"]:not(:checked) {
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #0F0771;
+  border-color: #0F0771;
+  color: #fff;
+}
 
     /* activity */
     .container-activities{
@@ -926,7 +1005,11 @@ word-spacing: .1rem;
     font-family:var(--font-family);
     font-size: 3rem;
   }
-  
+  /* course */
+  .course img{
+    width:400px;
+     height:300px;
+  }
 @media screen and (min-width:256px) and (max-width:468px){
  
    .header p{
@@ -1101,6 +1184,10 @@ footer{
   margin-left: 15px;
   margin-top: 5px;
 }
+.course img{
+  width: 200px;
+  height: 200px;
+}
 }
 
 @media screen and (min-width:469px) and (max-width:768px) {
@@ -1236,6 +1323,7 @@ footer{
   .commitee .card h5{
     font-size: 1rem !important;
   }
+
 }
 @media screen and (max-width:990px){
   
@@ -1287,7 +1375,13 @@ footer{
 .container-activities .card-text{
   font-size: .8rem;
 }
-
+.course img{
+  width:200px;
+  height: 300px;
+}
+.mockDes{
+  font-size: .8rem;
+}
 }
  @media screen and (min-width:992px) and (max-width:1199px){
 .header p{

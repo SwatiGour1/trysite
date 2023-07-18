@@ -483,176 +483,179 @@ margin-left: 10%;
 }
 
 /* contact us */
-.container-contact-page{
-  display: flex;
+.container-conatct-us{
+  width: 100%;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
-.container-contact-page .card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 0;
-  box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.201), /* Top shadow */
+.container-conatct-us .card{
+   
+    top: 20px;
+    border-radius: 0;
+    box-shadow:  4px 4px 4px 4px rgba(0, 0, 0, 0.201), /* Top shadow */
   0px -4px 6px -2px rgba(0, 0, 0, 0.1), /* Bottom shadow */
   4px 0px 6px -2px rgba(0, 0, 0, 0.1), /* Left shadow */
   -4px 0px 6px -2px rgba(0, 0, 0, 0.1); /* Right shadow */
-  top: 20px;
- 
+  bottom: 40%;
 }
 
-.container-contact-page .card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  height: 100%;
-  background-color:#0F0771; /* Set the blue color */
-}
 
-.container-contact-page .card-body {
-  padding: 2rem;
-}
-
-.card-text-left {
-  color:#fff;
-  text-align: left;
-  position: relative;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.card-text-right {
-  /* text-align: right; */
-  color: #0F0771;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.card-address{
-  color: #fff;
-  position: relative;
   
-}
-
-.contact-image{
-  position: relative;
-  width: 60%;
-  height: 30%;
-  top: 15%;
-}
-
-.card-info{
-  position: relative;
-  color: #fff;
-  font-size: 15px;
-  font-weight:normal;
-}
-
-
-
-.container-contact-page .row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.form-group {
-  flex: 1;
-  margin-right: 10px;
-}
-
-
-input {
-  width: 100%;
-  padding: 5px;
-  border:1px solid #0F0771;
- 
-}
-
-input::placeholder {
-  color:black;
-}
-
-.countries-dropdown {
-  width: 200px;
-  padding: 5px;
-  border: 1px solid #0F0771;
-}
-
-.countries-dropdown option {
-  padding: 5px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 5px;
-  margin-top: 5px;
-  border:1px solid #0F0771;
-}
-
-input,
-textarea::placeholder{
-  color: black;
-}
-.map-text{
-  font-size: 15px;
-  text-align: center;
-  color: #0F0771;
-}
-
-.send-message-btn {
-  padding: 4px 8px;
-  font-size: 13px;
-  border: none;
-  border-radius: 5px;
-  background-color:#0F0771;
-  color: white; 
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  margin-top: 1px;
-  /* margin-bottom: 12px; */
- /* margin-left: 150px; */
-}
-
-.send-message-btn:hover {
-  background-color:#fff;
-  color: black;
-  border: #0F0771 solid 1px;
-}
-
-
-
-
-label {
-  display: block; 
-  margin-bottom: 10px;
-}
-
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 14px;
-  height: 13px;
-  border: 2px solid #0F0771;
-  border-radius: 4px;
-  vertical-align: middle;
-  margin-right: 8px;
-  margin-bottom: 6px;
-}
-
-input[type="checkbox"]:not(:checked) {
-  background-color: #fff;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #0F0771;
-  border-color: #0F0771;
-  color: #fff;
-}
-
+.container-conatct-us .col-md-4,
+ .col-md-8 {
+    padding-right: 0;
+    padding-left: 0;
+    
+    
+  }
+  .container-conatct-us .card-text-left {
+    color:#fff;
+    text-align: left;
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .container-conatct-us .card-text-right {
+    color: #0F0771;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  .container-conatct-us .card-address{
+    color: #fff;
+    position: relative;
+    
+  }
+  
+  .container-conatct-us .contact-image{
+    position: relative;
+    width: 80%;
+    height: 30%;
+    top: 15%;
+    left: 10px;
+  }
+  
+  .container-conatct-us .card-info{
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    font-weight:normal;
+  }
+  
+  
+  
+  .container-conatct-us .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 0px 55px;
+  }
+  
+  .container-conatct-us .form-group {
+    flex: 1;
+    width: 100%;
+    
+  }
+  
+  
+  .container-conatct-us input {
+    width: 100%;
+    
+    border:1px solid #0F0771;
+    
+   
+  }
+  
+  .container-conatct-us input::placeholder {
+    color:black;
+  
+  }
+  
+  .container-conatct-us .countries-dropdown {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #0F0771;
+  }
+  
+  .container-conatct-us .countries-dropdown option {
+    padding: 5px;
+  }
+  
+  .container-conatct-us input,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border:1px solid #0F0771;
+  }
+  
+  .container-conatct-us input,
+  textarea::placeholder{
+    color: black;
+   
+  }
+  .container-conatct-us .map-text{
+    font-size: 15px;
+    text-align: center;
+    color: #0F0771;
+  }
+  
+  .container-conatct-us .send-message-btn {
+    padding: 4px 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color:#0F0771;
+    color: white; 
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  
+  }
+  
+  .container-conatct-us .send-message-btn:hover {
+    background-color:#fff;
+    color: black;
+    border: #0F0771 solid 1px;
+  }
+  
+  
+  
+  
+  .container-conatct-us label {
+    display: block; 
+    margin-bottom: 10px;
+  }
+  
+  .container-conatct-us input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 14px;
+    height: 13px;
+    border: 2px solid #0F0771;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 6px;
+  }
+  
+  .container-conatct-us input[type="checkbox"]:not(:checked) {
+    background-color: #fff;
+  }
+  
+  .container-conatct-us input[type="checkbox"]:checked {
+    background-color: #0F0771;
+    border-color: #0F0771;
+    color: #fff;
+  }
     /* activity */
     .container-activities{
       overflow-x: hidden;
@@ -1159,13 +1162,10 @@ footer{
 .container-contact-page .card-title{
   font-size: 1rem;
 }
-.commitee{
-  display: flex;
-  flex-direction: column;
-}
+
 .award img{
-  margin-left:50px;
-}
+  margin-left:70px !important;
+} 
 .award h5{
   font-size: 1rem;
   margin-left: 50px;
@@ -1180,9 +1180,17 @@ footer{
 .hdepart th{
   font-size: .7rem;
 }
+.commitee{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .commitee .card{
-  margin-left: 15px;
-  margin-top: 5px;
+  margin: 2px;
+}
+.commitee img{
+  margin-left:60px !important;
 }
 .course img{
   width: 200px;
@@ -1302,7 +1310,7 @@ footer{
   font-size: .6rem;
 }
 .award img{
-  margin-left:10px;
+  margin-left:150px!important;
   width: 180px;
   margin-top: 25px;
 }
@@ -1316,14 +1324,19 @@ footer{
 .award1 p{
   font-size: 1rem;
 }
-.commitee .card img{
-  width: 170px;
-  height: 150px;
-  }
-  .commitee .card h5{
-    font-size: 1rem !important;
-  }
 
+  .commitee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .commitee .card{
+    margin: 2px;
+  }
+  .commitee img{
+    margin-left:70px !important;
+  }
 }
 @media screen and (max-width:990px){
   
@@ -1382,6 +1395,18 @@ footer{
 .mockDes{
   font-size: .8rem;
 }
+ .commitee .card img{
+  width: 170px;
+  height: 150px;
+  }
+  .commitee .card h5{
+    font-size: 1rem !important;
+  } 
+  .award img{
+    margin-left:10px;
+    width: 180px;
+    margin-top: 25px;
+  }
 }
  @media screen and (min-width:992px) and (max-width:1199px){
 .header p{

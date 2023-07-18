@@ -1310,7 +1310,7 @@ footer{
   font-size: .6rem;
 }
 .award img{
-  margin-left:150px!important;
+  /* margin-left:150px!important; */
   width: 180px;
   margin-top: 25px;
 }
@@ -1403,7 +1403,7 @@ footer{
     font-size: 1rem !important;
   } 
   .award img{
-    margin-left:10px;
+    /* margin-left:10px; */
     width: 180px;
     margin-top: 25px;
   }
